@@ -5,14 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config=webpack.config.js --mode=development"
+    "start": "webpack-dev-server --config=webpack.config.js --mode=development",
+    "build": "webpack --progress --colors --config=webpack.config.js --mode=production",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "san": "^3.8.1",
     "san-router": "^1.2.2"
   },
+  "homepage": "https://github.com/chiyu-git.github.io/chiyu-demo",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
