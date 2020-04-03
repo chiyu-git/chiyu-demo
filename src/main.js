@@ -1,12 +1,12 @@
 
-import san from 'san'
+import san from 'san';
 
 // route
-import App from './App.san'
+import App from './App.san';
 
-import {router} from 'san-router'
+import {router} from 'san-router';
 
 router.add({rule: '/', Component: App, target: '#app'});
 
 // start
-router.start()
+router.start();
