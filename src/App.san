@@ -27,7 +27,7 @@
             </tbody>
         </table>
       </div>
-      <p>已选择的日期：{{picked}}</p>
+      <p>选择的日期：{{picked}}</p>
     </div>
 </template>
 
