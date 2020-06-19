@@ -2,7 +2,7 @@
 import san from 'san';
 
 // route
-import App from './App.san';
+import App from './frame.js';
 
 import {router} from 'san-router';
 

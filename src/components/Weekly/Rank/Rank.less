@@ -1,0 +1,115 @@
+@tagWidth:393.73px;
+@foWidth:381.3px;
+
+.textarea{
+    font-size:14px;
+    border:none;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    resize:none;
+}
+img {
+    width: 48px;
+    border-radius: 50%;
+}
+
+
+.rank-wrap{
+    width: fit-content;
+    .rank-title {
+        width:100%;
+        display: flex;
+        font-size: 24px;
+        line-height: 50px;
+        align-items: baseline;
+        justify-content: space-between;
+    
+        .describe{
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        .range{
+            font-size: 14px;
+            margin-right:10px;
+        }
+    }
+}
+
+.tag-content {
+    display: grid;
+    grid-template-rows: repeat(12, 50px);
+    /* 通过grid-auto去控制textarea */
+    grid-template-columns: repeat(3, @tagWidth);
+    grid-auto-columns:350px;
+    grid-auto-flow: column;
+    border-top:1px solid;
+    textarea{
+      grid-row-start: 1;
+      grid-row-end: 13;
+      &:extend(.textarea all);
+    }
+}
+.fo-content {
+    display: grid;
+    grid-template-rows: repeat(9, 50px);
+    grid-template-columns: repeat(2, @foWidth);
+    grid-auto-columns:350px;
+    grid-auto-flow: column;
+    border-top: 1px solid;
+    textarea{
+      grid-row-start: 1;
+      grid-row-end: 10;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      &:extend(.textarea all);
+      border-top: 1px solid;
+    }
+}
+
+.rank-detail {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    .rank {
+        margin: 0 5px;
+        width: 20px;
+        text-align: center;
+    }
+    .member {
+        flex-grow: 1;
+    }
+    .main{
+        width: 75px;
+        text-align: end;
+        line-height:50px;
+        padding-right:5px;
+    }
+    .minor{
+        width: 60px;
+        text-align: end;
+        line-height:50px;
+        padding-right:5px;
+    }
+}
+
+.muse {
+    background-color: rgba(#ee0088, 0.5);
+}
+.aqours {
+    background-color: rgba(#4fc4fe, 0.5);
+}
+.hello {
+    background-color: rgba(#ffd5df, 0.5);
+}
+.nijigasaki {
+    background-color: rgba(#f39800, 0.5);
+}
+.summary{
+
+}

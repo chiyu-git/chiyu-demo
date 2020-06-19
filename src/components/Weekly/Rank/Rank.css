@@ -1,0 +1,107 @@
+.textarea,
+.tag-content textarea,
+.fo-content textarea {
+    padding: 10px 20px;
+    border: none;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    resize: none;
+}
+img {
+    width: 48px;
+    border-radius: 50%;
+}
+.rank-wrap {
+    width: fit-content;
+}
+.rank-wrap .rank-title {
+    display: flex;
+    width: 100%;
+    font-size: 24px;
+    line-height: 50px;
+
+    align-items: baseline;
+    justify-content: space-between;
+}
+.rank-wrap .rank-title .describe {
+    margin-left: 10px;
+    font-size: 14px;
+}
+.rank-wrap .rank-title .range {
+    margin-right: 10px;
+    font-size: 14px;
+}
+.tag-content {
+    display: grid;
+    border-top: 1px solid;
+
+    grid-auto-columns: 350px;
+    grid-auto-flow: column;
+    /* 通过grid-auto去控制textarea */
+    grid-template-columns: repeat(3, 393.73px);
+    grid-template-rows: repeat(12, 50px);
+}
+.tag-content textarea {
+    grid-row-end: 13;
+    grid-row-start: 1;
+}
+.fo-content {
+    display: grid;
+    border-top: 1px solid;
+
+    grid-auto-columns: 350px;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 381.3px);
+    grid-template-rows: repeat(9, 50px);
+}
+.fo-content textarea {
+    border-top: 1px solid;
+
+    grid-column-end: 4;
+    grid-column-start: 3;
+    grid-row-end: 10;
+    grid-row-start: 1;
+}
+.rank-detail {
+    display: flex;
+    box-sizing: border-box;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    font-size: 16px;
+
+    align-items: center;
+}
+.rank-detail .rank {
+    width: 20px;
+    margin: 0 5px;
+    text-align: center;
+}
+.rank-detail .member {
+    flex-grow: 1;
+}
+.rank-detail .main {
+    width: 75px;
+    padding-right: 5px;
+    line-height: 50px;
+    text-align: end;
+}
+.rank-detail .minor {
+    width: 60px;
+    padding-right: 5px;
+    line-height: 50px;
+    text-align: end;
+}
+.muse {
+    background-color: rgba(238, 0, 136, .5);
+}
+.aqours {
+    background-color: rgba(79, 196, 254, .5);
+}
+.hello {
+    background-color: rgba(255, 213, 223, .5);
+}
+.nijigasaki {
+    background-color: rgba(243, 152, 0, .5);
+}
